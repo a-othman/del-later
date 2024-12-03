@@ -34,7 +34,6 @@ jobs:
         run: npm ci
       - name: Test code
         id: test-code
-        id: test-code
         run: npm run test
       - name: Upload test report
         if: failure() && ${{ steps.test-code.outcome == 'failure' }} 
